@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Ray & ECG Gallery - Ankur Portable X-Ray & ECG</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>X-Ray & ECG Gallery</h1>
+        <p>Explore our collection of X-ray and ECG scans for various conditions.</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="appointment.html">Book Appointment</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+
+        </nav>
+    </header>
+
+    <section class="gallery-container">
+        <h2>🦴 Human X-Rays</h2>
+        <div class="gallery">
+            <figure>
+                <img src="images/human_chest_xray.jpg" alt="Human Chest X-Ray" onclick="openModal(this)">
+                <figcaption>A detailed chest X-ray showing lung and heart structures.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/human_spine_xray.jpg" alt="Human Spine X-Ray" onclick="openModal(this)">
+                <figcaption>A clear X-ray of the human spine, useful for detecting fractures or misalignment.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/human_knee_xray.jpg" alt="Human Knee X-Ray" onclick="openModal(this)">
+                <figcaption>An X-ray image displaying the knee joint and bone structure.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/human_skull_xray.jpg" alt="Human Skull X-Ray" onclick="openModal(this)">
+                <figcaption>A detailed skull X-ray useful for identifying fractures or dental issues.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="gallery-container">
+        <h2>🐶 Animal X-Rays</h2>
+        <div class="gallery">
+            <figure>
+                <img src="images/dog_xray.jpg" alt="Dog X-Ray" onclick="openModal(this)">
+                <figcaption>A canine X-ray displaying the ribcage and spine.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cat_xray.jpg" alt="Cat X-Ray" onclick="openModal(this)">
+                <figcaption>A feline X-ray showing internal bone structure.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/horse_xray.jpg" alt="Horse X-Ray" onclick="openModal(this)">
+                <figcaption>An equine X-ray used for diagnosing leg injuries in horses.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bird_xray.jpg" alt="Bird X-Ray" onclick="openModal(this)">
+                <figcaption>An X-ray scan of a bird showing delicate skeletal structures.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="gallery-container">
+        <h2>📈 ECG Scans</h2>
+        <div class="gallery">
+            <figure>
+                <img src="images/ecg_scan_1.jpg" alt="ECG Scan 1" onclick="openModal(this)">
+                <figcaption>A digital ECG scan displaying clear heart wave patterns.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ecg_scan_2.jpg" alt="ECG Scan 2" onclick="openModal(this)">
+                <figcaption>An ECG printout showing heart rhythm analysis.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ecg_scan_3.jpg" alt="ECG Scan 3" onclick="openModal(this)">
+                <figcaption>A patient undergoing an ECG test with electrodes attached.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+
+    <footer>
+        <p>📞 Contact us: <a href="tel:+917249291373">+91 7249291373</a></p>
+        <p>📍 Address: Shop No 13-20, Ground Floor, Durvankur Society, Ashoka Nagar, Kharadi, Pune, Maharashtra 411028</p>
+        <a href="https://wa.me/917249291373" target="_blank" class="whatsapp-link">
+            <img src="images/whatsapp_logo.jpg" alt="WhatsApp" class="small-logo"> Message us on WhatsApp
+        </a>
+    </footer>
+</body>
+</html>

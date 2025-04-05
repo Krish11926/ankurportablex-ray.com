@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment - Ankur Portable X-Ray & ECG</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Book an Appointment</h1>
+        <p>Schedule an X-ray or ECG service at your convenience.</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="xray-gallery.html">X-Ray & ECG Gallery</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+
+    <section class="appointment-container">
+        <h2>📋 Select a Service</h2>
+        <p>We offer high-quality diagnostics at your doorstep.</p>
+        <div class="service-box">
+            <h3>X-Ray Service</h3>
+            <p>Portable digital X-ray at home.</p>
+            <span class="contact-us">Contact Us for Pricing</span>
+        </div>
+        <div class="service-box">
+            <h3>ECG Service</h3>
+            <p>Accurate ECG tests in the comfort of your home.</p>
+            <span class="contact-us">Contact Us for Pricing</span>
+        </div>
+        <div class="service-box">
+            <h3>Emergency Service</h3>
+            <p>24/7 urgent X-ray & ECG services.</p>
+            <span class="contact-us">Contact Us for Pricing</span>
+        </div>
+    </section>
+
+    <section class="booking-form">
+        <h2>📅 Book Your Appointment</h2>
+        <p>Fill in the details to schedule your X-ray or ECG service.</p>
+        <form id="appointmentForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="service">Select Service:</label>
+                <select id="service" name="service">
+                    <option value="X-Ray">X-Ray</option>
+                    <option value="ECG">ECG</option>
+                    <option value="Emergency">Emergency Service</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <button type="submit" class="whatsapp-btn">Book via WhatsApp</button>
+        </form>
+    </section>
+
+    <footer>
+        <h2>Follow Us on Social Media</h2>
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/1BFWxiUtrn/?mibextid=wwXIfr" target="_blank"><img src="images/facebook_icon.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/diagnosticankur?igsh=MWNtZDA2YnRhaDZ4OQ==" target="_blank"><img src="images/instagram_icon.png" alt="Instagram"></a>
+        </div>
+        <p>📞 Contact us: <a href="tel:+917249291373">+91 7249291373</a></p>
+        <p>📍 Address: Shop No 13-20, Ground Floor, Durvankur Society, Ashoka Nagar, Kharadi, Pune, Maharashtra 411028</p>
+        <a href="https://wa.me/917249291373" target="_blank" class="whatsapp-link">
+            <img src="images/whatsapp_logo.jpg" alt="WhatsApp" class="small-logo"> Message us on WhatsApp
+        </a>
+    </footer>
+</body>
+</html>

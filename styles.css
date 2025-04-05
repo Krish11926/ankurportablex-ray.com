@@ -1,0 +1,609 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3, p {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+nav a:hover {
+    background-color: white;
+    color: #0056b3;
+    border-radius: 5px;
+}
+
+/* Images and Hover Effects */
+img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+img:hover {
+    transform: scale(1.1);
+}
+
+p:hover, h2:hover, h3:hover {
+    color: #ff5733;
+}
+
+/* Services Section */
+.service-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+.service-box:hover {
+    transform: translateY(-5px);
+    background-color: #ffebcd;
+}
+
+/* Appointment Section */
+.booking-form {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+}
+.booking-form h2 {
+    color: #ffcc00;
+}
+.booking-form input, .booking-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+.booking-form button {
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.booking-form button:hover {
+    background-color: #ff5733;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Social Media Icons */
+.social-links img {
+    width: 30px;
+    height: auto;
+    margin: 5px;
+    transition: 0.3s;
+}
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+/* WhatsApp Logo */
+.whatsapp-link img {
+    width: 40px;
+    height: auto;
+    transition: 0.3s;
+}
+.whatsapp-link img:hover {
+    transform: scale(1.1);
+}
+
+/* === Updated Text Section (Colors, Spacing, and Effects) === */
+.updated-text {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.updated-text h2 {
+    color: #0056b3;
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.updated-text p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.updated-text span {
+    display: block;
+    margin: 10px 0;
+    color: #ff5733;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.updated-text span:hover {
+    color: #ffcc00;
+}
+
+/* Updated Testimonial Section */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 700px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials h2 {
+    color: #ff5733;
+    margin-bottom: 10px;
+}
+
+.testimonials p {
+    font-size: 18px;
+    color: #444;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonials span {
+    font-weight: bold;
+    color: #0056b3;
+    display: block;
+}
+
+/* Updated Working Hours */
+.working-hours {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+}
+
+.working-hours p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Updated Call-to-Action Section */
+.cta {
+    background-color: #ff5733;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cta a {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta a:hover {
+    background-color: white;
+    color: #ff5733;
+}
+.boxed-text {
+    background-color: #ffffff;
+    border: 2px solid #0056b3;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.boxed-text:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 86, 179, 0.3);
+}
+
+.boxed-text h2 {
+    color: #0056b3;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.boxed-text p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+.boxed-gallery {
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+    border: 2px solid #00acc1;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 8px 16px rgba(0, 172, 193, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+.boxed-gallery:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 20px rgba(0, 172, 193, 0.4);
+}
+
+.boxed-gallery h2 {
+    color: #007c91;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.boxed-gallery p {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.gallery-btn {
+    display: inline-block;
+    background-color: #00acc1;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.gallery-btn:hover {
+    background-color: #007c91;
+}
+.testimonial-box {
+    background: linear-gradient(to right, #fce4ec, #f3e5f5);
+    border: 2px solid #ab47bc;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 8px 20px rgba(171, 71, 188, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+.testimonial-box:hover {
+    transform: scale(1.01);
+    box-shadow: 0 12px 24px rgba(171, 71, 188, 0.3);
+}
+
+.testimonial-box h2 {
+    color: #6a1b9a;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.testimonial {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+    background-color: #f8bbd0;
+}
+
+.testimonial p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.testimonial span {
+    font-weight: bold;
+    color: #880e4f;
+}
+.working-hours-box {
+    background: linear-gradient(to right, #e3f2fd, #bbdefb);
+    border: 2px solid #1e88e5;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 8px 20px rgba(30, 136, 229, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+.working-hours-box:hover {
+    transform: scale(1.01);
+    box-shadow: 0 12px 24px rgba(30, 136, 229, 0.3);
+}
+
+.working-hours-box h2 {
+    color: #0d47a1;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.working-hours-box p {
+    font-size: 18px;
+    color: #0d47a1;
+    margin: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.working-hours-box p:hover {
+    color: #1565c0;
+}
+.test-results-box {
+    background: linear-gradient(to right, #e8f5e9, #c8e6c9);
+    border: 2px solid #43a047;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+.test-results-box:hover {
+    transform: scale(1.01);
+    box-shadow: 0 12px 24px rgba(76, 175, 80, 0.3);
+}
+
+.test-results-box h2 {
+    color: #2e7d32;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.test-results-box p {
+    font-size: 18px;
+    color: #2e7d32;
+    margin: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.test-results-box p:hover {
+    color: #1b5e20;
+}
+.website-promo-box {
+    background: linear-gradient(135deg, #ffe0b2, #ffccbc);
+    border: 2px solid #ff7043;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 10px 25px rgba(255, 112, 67, 0.3);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.website-promo-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 30px rgba(255, 112, 67, 0.4);
+}
+
+.website-promo-box h2 {
+    color: #bf360c;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.website-promo-box p {
+    font-size: 18px;
+    color: #e65100;
+    margin-bottom: 20px;
+}
+
+.promo-btn {
+    display: inline-block;
+    background-color: #ff5722;
+    color: white;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.promo-btn:hover {
+    background-color: #e64a19;
+    transform: translateY(-2px);
+}
+.premium-box {
+    background: linear-gradient(145deg, #fff8e1, #ffe082);
+    border: 2px solid #fbc02d;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 10px 30px rgba(251, 192, 45, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.premium-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 35px rgba(255, 215, 0, 0.35);
+}
+
+.premium-box h2 {
+    color: #b28900;
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.premium-box h2:hover {
+    color: #ff6f00;
+}
+.about-box {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    border: 2px solid #0288d1;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(2, 136, 209, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 30px rgba(2, 136, 209, 0.3);
+}
+
+.about-box h2 {
+    color: #01579b;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.about-box h2:hover {
+    color: #ff6f00;
+}
+
+.about-box p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.about-box p:hover {
+    color: #ff9800;
+}
+.why-choose-box {
+    background: linear-gradient(135deg, #ffecb3, #ffcc80);
+    border: 2px solid #ff9800;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(255, 152, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-choose-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 30px rgba(255, 152, 0, 0.3);
+}
+
+.why-choose-box h2 {
+    color: #e65100;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.why-choose-box h2:hover {
+    color: #ff6f00;
+}
+
+.why-choose-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-choose-box li {
+    font-size: 18px;
+    color: #333;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.why-choose-box li:hover {
+    color: #d84315;
+}
+.team-container {
+    width: 60%; /* Reduce size to 60% of its original width */
+    max-width: 500px; /* Prevent it from being too big on larger screens */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 20px auto; /* Center the image */
+    border-radius: 15px; /* Optional: Adds rounded corners for a modern look */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Optional: Adds a soft shadow */
+    transition: transform 0.3s ease;
+}
+
+.team-container:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
