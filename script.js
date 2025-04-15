@@ -20,3 +20,26 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 });
+function bookViaWhatsApp() {
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const service = document.getElementById("service").value;
+    const date = document.getElementById("date").value;
+
+    if (!name  !phone  !service || !date) {
+        alert("Please fill in all the fields.");
+        return;
+    }
+
+    const message = `Appointment Booking Request:%0A
+Name: ${name}%0A
+Phone: ${phone}%0A
+Service: ${service}%0A
+Preferred Date: ${date}%0A
+%0AThank you! Please confirm the appointment.`;
+
+    const whatsappNumber = "917249291373"; // Your WhatsApp business number
+    const whatsappURL = https://wa.me/${whatsappNumber}?text=${message};
+
+    window.open(whatsappURL, "_blank");
+}
